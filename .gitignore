@@ -1,0 +1,11 @@
+# API keys
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Output files (nếu muốn giữ lại thì xóa dòng dưới)
+# *.csv
+# *.png
