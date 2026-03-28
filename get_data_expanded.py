@@ -1,12 +1,3 @@
-"""
-=============================================================================
-  EXPANDED DATA COLLECTION - YouTube API
-  Lấy nhiều dữ liệu hơn bằng cách:
-  1. Thêm NHIỀU keywords (30+ từ khóa)
-  2. Dùng PAGINATION để lấy hơn 50 video mỗi keyword
-  3. Keywords cụ thể theo từng loại hoa
-=============================================================================
-"""
 from googleapiclient.discovery import build
 import pandas as pd
 from dotenv import load_dotenv
@@ -19,13 +10,7 @@ API_KEY = os.getenv("YOUTUBE_API_KEY")
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 def get_youtube_data_expanded(queries, max_pages=3):
-    """
-    Lấy dữ liệu YouTube mở rộng.
-    - max_pages: số trang kết quả mỗi keyword (mỗi trang 50 video)
-      max_pages=3 => tối đa 150 video/keyword
-    """
     all_data = []
-    
     for q in queries:
         print(f"\n🔍 Đang lấy dữ liệu cho: '{q}'...")
         next_page_token = None
@@ -100,9 +85,7 @@ def get_youtube_data_expanded(queries, max_pages=3):
     return pd.DataFrame(all_data)
 
 
-# =============================================================================
-# DANH SÁCH TỪ KHÓA MỞ RỘNG (30+ keywords)
-# =============================================================================
+
 keywords = [
     # --- Xu hướng chung ---
     "flower arrangement trends 2024",
@@ -149,9 +132,6 @@ keywords = [
     "flower market demand",
 ]
 
-# =============================================================================
-# CHẠY VÀ LƯU
-# =============================================================================
 if __name__ == "__main__":
     print("=" * 60)
     print("  YOUTUBE DATA COLLECTION - EXPANDED VERSION")
