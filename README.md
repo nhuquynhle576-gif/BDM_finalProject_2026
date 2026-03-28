@@ -70,7 +70,6 @@ BDM Code/
 | **SerpAPI** | Thu thập dữ liệu Google Trends |
 | **Apify** | Scrape dữ liệu Instagram & TikTok |
 | **openpyxl** | Xuất dữ liệu ra định dạng Excel |
-| **emoji** | Loại bỏ emoji khỏi text |
 | **python-dotenv** | Quản lý biến môi trường (.env) |
 
 ---
@@ -168,13 +167,7 @@ Dự án sử dụng **30+ từ khóa** được phân loại theo:
 
 ---
 
-## 👥 Thành viên nhóm
 
-| Họ tên | GitHub |
-|---|---|
-| Như Quỳnh Lê | [@nhuquynhle576-gif](https://github.com/nhuquynhle576-gif) |
-
----
 
 ## 📝 Ghi chú
 
